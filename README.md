@@ -1,4 +1,4 @@
-#### Examples for verifying cross JPA-PU transactions ####
+## Examples for verifying cross JPA-PU transactions ##
 
 * SLSB Service 1: CategoryManager backed by a standalone JPA PU
 * SLSB Service 2: ProductManager backed by a standalone JPA PU
@@ -11,7 +11,7 @@ CategoryManager.update() and ProductManager.update(). Two cases:
 
 The IntegrationService.recover() can be used to recover the database back to the original states.
 
-## Observations ##
+### Observations ###
 * Once ejb-jar.xml is used; All resource injections are disabled.
 * There is some problems when using @Inject (CDI). So we use @Resource(lookup="...") to bind the callee session beans.
 * Many problems when using jakarta's namespace; So we fallback to verify the tx issues using javax namespace for now.
