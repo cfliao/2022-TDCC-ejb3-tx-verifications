@@ -15,4 +15,4 @@ The IntegrationService.recover() can be used to recover the database back to the
 * Once ejb-jar.xml is used; All resource injections are disabled.
 * There is some problems when using @Inject (CDI). So we use @Resource(lookup="...") to bind the callee session beans.
 * Many problems when using jakarta's namespace; So we fall back to verify the tx issues using javax namespace for now.
-* JBoss EAP 7.4 use Hibernate 5.3.20.Final; It is better do develop Apps using this version. Here is a complete list of JBosss EAP component versions: https://access.redhat.com/articles/112673 
+* JBoss EAP 7.4 use Hibernate 5.3.20.Final; It is better to develop Apps using this version. Here is a complete list of JBosss EAP component versions: https://access.redhat.com/articles/112673 
